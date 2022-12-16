@@ -1,0 +1,145 @@
+/* main html elements */
+body {
+    margin: auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: transparent
+}
+
+ul {
+    text-align: left;
+}
+
+header {
+    background-color: transparent;
+    display: flow-root;
+    padding: 30px 10px;
+}
+
+.header-right {
+    float: right;
+}
+
+
+header .header-right nav ul {
+    display: flex;
+    align-items: center;
+}
+
+header .header-right nav ul li a {
+    padding: 0 10px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+main {
+    grid-area: main;
+    background-color: transparent;
+    grid-template-rows: 100% 100% 100%;
+}
+
+main section div p {
+    text-align: right;
+}
+
+footer {
+    grid-area: footer;
+    background-color: darkcyan;
+    height: 100px;
+}
+
+/* ids and classes */
+#logo {
+    float: left;
+}
+
+#logo img {
+    height: 100px;
+    width: 100px;
+}
+
+#jumbotron {
+    background-image: url(/assets/img/Portada2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    border-radius: 40px;
+    display: flex;
+}
+
+.jumbotron {
+    font-size: 5em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#blog {
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /*aqui se dividio en 3 fracciones*/
+    padding: 20px;
+    gap: 20px;
+}
+
+#blog article {
+    width: 200px;
+    height: 200px;
+    border-radius: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+article img {
+    border-radius: 40px;
+}
+
+#adicionales {
+    background-color: transparent;
+    height: 300px;
+    border-radius: 40px;
+}
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 'footerArea footerArea . . .';
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+#footerLinks {
+    display: grid;
+
+}
+
+/*@media screen and (max-width: 420px) {*/
+/*    #blog {*/
+/*        grid-template-columns: 1fr 1fr;*/
+/*        padding: 10px;*/
+/*    }*/
+
+/*    #blog article {*/
+/*        width: 150px;*/
+/*        height: 150px;*/
+/*    }*/
+/*}*/
+
+/*@media (max-width: 420px) {*/
+/*    header .header-right {*/
+/*        display: flex;*/
+/*    }*/
+
+/*    header {*/
+/*        background-color: red;*/
+/*    }*/
+/*}*/
